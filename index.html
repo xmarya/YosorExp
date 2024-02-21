@@ -84,7 +84,7 @@
         </header>
 
 
-        <section class="our-services-section">
+        <section class="our-services-section" id="our-services">
             <h2 class="section-title">
                 خـدمـاتـــنـا
             </h2>
@@ -188,51 +188,83 @@
                 تجــارب العمــلاء
             </h2>
             <div class="slider-container">
-                <div class="slider-btn-container">
-                    <div class="slider-btn go-prev">
-                        <svg class="icon"><use xlink:href="./src/assets/sprite.svg#icon-arrow-left2"></use></svg>
-                    </div>
-                    <div class="slider-btn go-next">
-                        <svg class="icon"><use xlink:href="./src/assets/sprite.svg#icon-arrow-right2"></use></svg>
-                    </div>
+                <div class="slider-btn go-prev">
+                    <svg class="icon"><use xlink:href="./src/assets/sprite.svg#icon-arrow-left2"></use></svg>
                 </div>
 
                 <div class="slider">
-                    <div class="slide">
-                        <span>1</span>
-                        <p>
-                            عجبني تنوع المنتجات والخدمة الاضافية المقدمه خدمة طباعة عند الطلب تقيمي هو ١٠/١٠
-                        </p>
-                    </div>
-                    <div class="slide">
-                        <span>2</span>
-                        <p>
-                            عجبني تنوع المنتجات والخدمة الاضافية المقدمه خدمة طباعة عند الطلب تقيمي هو ١٠/١٠
-                        </p>
-                    </div>
-                    <div class="slide">
-                        <span>3</span>
-                        <p>
-                            عجبني تنوع المنتجات والخدمة الاضافية المقدمه خدمة طباعة عند الطلب تقيمي هو ١٠/١٠
-                        </p>
-                    </div>
-                    <div class="slide">
-                        <span>4</span>
-                        <p>
-                            عجبني تنوع المنتجات والخدمة الاضافية المقدمه خدمة طباعة عند الطلب تقيمي هو ١٠/١٠
-                        </p>
-                    </div>
-                    <div class="slide">
-                        <span>5</span>
-                        <p>
-                            عجبني تنوع المنتجات والخدمة الاضافية المقدمه خدمة طباعة عند الطلب تقيمي هو ١٠/١٠
-                        </p>
-                    </div>
+                        <div class="slide">
+                            <span>ساره داوود</span>
+                            <p>
+                                عجبني تنوع المنتجات والخدمة الاضافية المقدمه خدمة طباعة عند الطلب تقيمي هو ١٠/١٠
+                            </p>
+                        </div>
+                        <div class="slide">
+                            <span>محمد عبدالله</span>
+                            <p>
+                                من افضل التطبيقات الي تعاملت معها لدروبشبيق سهوله وبساطة في تعامل وتوصيل سريع
+                            </p>
+                        </div>
+                        <div class="slide">
+                            <span>محمد عبدالله</span>
+                            <p>
+                                اسعار المنتجات ممتازة وربح منها مرره كويس
+                            </p>
+                        </div>
+                </div>
+                <div class="slider-btn go-next">
+                    <svg class="icon"><use xlink:href="./src/assets/sprite.svg#icon-arrow-right2"></use></svg>
                 </div>
             </div>
         </section>
-        <section class="contact-section" id="#contact-us" style="background-color: blue;">5</section>
-        <footer class="footer-section"style="background-color: pink;">6</footer>
+
+        <section class="contact-section" id="contact-us">
+            <h2 class="section-title">
+                تــواصل مـعــنا
+            </h2>
+            <form class="contact-form" action="submit">
+                <input type="text" placeholder="الاسم"/>
+                <input type="email" placeholder="البريد الإلكتروني"/>
+                <input type="tel" placeholder="الهاتف"/>
+                <textarea name="message-detail" placeholder="... نص الرسالة" id="" cols="30" rows="10"></textarea>
+                <button class="cta-btn">ارسال</button>
+            </form>
+        </section>
+
+        <footer class="footer">
+            <a href="#">
+                <img src="./src/assets/white-logo-nobg.png" alt="white-logo">
+            </a>
+            <ul class="contact">
+                <h4>تواصل</h4>
+            </ul>
+            <ul class="footer-links">
+                <h4>روابط مهمة</h4>
+                <li>
+                    <a class="link" href="./src//pages/who-we-are.html">من نحن</a>
+                </li>
+                <li>
+                    <a class="link" href="#our-services">الخدمات</a>
+                </li>
+                <li>
+                    <a class="link" href="./src//pages/pricing.html">الباقات</a>
+                </li>
+                <li>
+                    <a class="link" href="#contact-us">تواصل معنا</a>
+                </li>
+                <li>
+                    <a class="link" href="./src/pages/login.html">منطقة التاجر</a>
+                </li>
+                <li>
+                    <a class="link" href="./src/pages/legals.html">اتفاقية الاستخدام</a>
+                </li>
+            </ul>
+            <div class="info">
+                <h4>معلومات</h4>
+                <p>
+                    نهدف إلى جعل العمل أسهل لجميع بائعي المنتجات عن طريق الطرح، لذلك لا تتردد في التواصل معنا بشأن إستفساراتك وإحتياجاتك                </p>
+            </div>
+        </footer>
     </div>
     
 </body>

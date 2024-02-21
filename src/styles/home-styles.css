@@ -10,10 +10,6 @@
   grid-column: full-start / full-end;
 }
 
-.footer-section {
-  grid-column: full-start / full-end;
-}
-
 /* ================== HERO SECTION ==================*/
 
 .hero-section {
@@ -117,20 +113,25 @@
 }
 
 /* ================== REVIEWS SECTION ==================*/
+
 .slider-container {
-background-color: pink;
+background-color: var(--body-colour);
 display: grid;
-grid-template-columns: min-content 1fr;
-/* gap: 10rem; */
-overflow: visible;
+grid-template-columns: 0.5fr 1fr 0.5fr;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+position: relative;
+z-index: 200;
 }
 
 .slider {
-  background-color: aquamarine;
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 15rem;
   overflow: visible;
-  padding-left: 10rem;
+  padding:0 10rem;
   position: relative;
   height: 20rem;
 
@@ -156,8 +157,8 @@ overflow: visible;
   padding: 2rem;
 
   opacity: 0;
-  z-index: -100;
-  transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+  transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .slide span {
@@ -165,16 +166,6 @@ overflow: visible;
   font-weight: 500;
 }
 
-.slider-btn-container {
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.6rem;
-  z-index: 100;
-
-  padding-left: 18rem;
-}
 
 .slider-btn {
   width: 6rem;
@@ -183,6 +174,7 @@ overflow: visible;
   background-color: var(--main-blue);
   color: #fff;
   box-shadow: var(--shadow-sm);
+  z-index: 10;
   cursor: pointer;
 
   display: flex;
@@ -190,6 +182,14 @@ overflow: visible;
   justify-content: center;
 
   transition: all 0.4s ease;
+}
+
+.go-next {
+  justify-self: start;
+}
+
+.go-prev {
+  justify-self: end;
 }
 
 .slider-btn:hover,
@@ -205,19 +205,68 @@ overflow: visible;
 .active {
   transform: translateX(0%) translateZ(0);
   opacity: 1;
-  z-index: 100;
+  z-index: 1;
   transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .previous {
-  transform: translateX(-125%) translateZ(0);
-  z-index: 90;
-  transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-85%) translateZ(0);
+  opacity: 0;
+  z-index: -1;
+  transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .next {
   transform: translateX(125%) translateZ(0);
-  opacity: 1;
-  z-index: 90;
-  transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  z-index: -1;
+  transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* ================== CONTACT SECTION ==================*/
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-form {
+  display: grid;
+  grid-template-columns: minmax(auto, 55rem);
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.contact-form > * {
+  text-align: right;
+  padding: 0.8rem;
+  font-size: 1.6rem;
+  font-family: var(--font-paragraph);
+  font-weight: 500;
+  color: var(--main-font-colour);
+}
+
+.contact-form *:focus {
+  outline-color: var(--main-blue);
+}
+
+.contact-form input {
+  height: 5rem;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form .cta-btn {
+  text-align: center;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  width: 20rem;
+  justify-self: center;
+
+  margin-bottom: 15rem;
 }
