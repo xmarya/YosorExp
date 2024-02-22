@@ -37,6 +37,7 @@
   align-items: end;
 }
 
+
 /* ==================== HOW YOSOR SECTION  ====================*/
 
 .how-yosor-section {
@@ -115,7 +116,7 @@
 
 .dropshop-section {
     grid-column: full-start / full-end;
-    background-color: pink;
+    background: linear-gradient(175deg, rgba(120,80,156,1) 40%, rgba(63,122,183,1) 61%, rgba(3,167,211,1) 86%);
     border-radius: 2rem;
 }
 
@@ -126,13 +127,14 @@
 .how-container {
     display: flex;
     flex-direction: column;
-    gap: 9rem;
+    gap: 18rem;
     padding: 0 6rem;
+    margin-bottom: 10rem;
+
     position: relative;
 }
 
 .how-item {
-    background-color: peachpuff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -156,6 +158,12 @@
 .item-img {
     width: 50%;
 }
+.item-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10rem;
+}
 
 .item--4 .item-img svg {
     height: 18rem;
@@ -175,11 +183,90 @@
     content: "";
     height: 100%;
     width: 1px;
-    /* background-color: rgba(255,255,255,.3); */
     background-color: var(--body-colour);;
     position: absolute;
     left: 50%;
     top: 0;
 
     z-index: 10;
+}
+
+  /* ================== ANIMATION ==================*/
+
+  #bag,
+  #shoe,
+  #clothes,
+  #headphone,
+  #tv,
+  #mouse,
+  #toy {
+      animation: scale 2s linear forwards infinite;
+      animation-delay: 2s ;
+      transform-origin: center;
+      transform-box: fill-box;
+  }
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+             
+    }
+
+    40% {
+        transform: scale(1.06);
+             
+    }
+
+    60% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.06);
+    }
+}
+#items g {
+    opacity: 0;
+    animation: dropIn 8s ease forwards infinite;
+    animation-delay: calc(var(--order) * 200ms);
+}
+
+#Money {
+    opacity: 0;
+    animation: dropIn 3s ease forwards infinite;
+}
+
+@keyframes dropIn {
+    20% {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+
+    30%, 100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+#squares g {
+    animation: goUp 4s ease forwards infinite;
+    animation-delay: calc(var(--order) * 200ms);
+}
+
+@keyframes goUp {
+    20% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+
+    30%, 90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#dropshop-img--2 {
+    opacity: 0;
+    animation: goUp 4s ease forwards infinite;
 }
