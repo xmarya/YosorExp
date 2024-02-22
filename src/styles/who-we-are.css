@@ -1,0 +1,185 @@
+:root {
+    --purple--light-1: #C9B9D7;
+    --purple--light-2: #AE96C4;
+    --purple--light-3: #9373B0;
+    --step-number-colour: #DEE2E6;
+    --step-detail-colour: #F8F9FA;
+}
+
+
+.section-paragraph {
+  font-size: 1.8rem;
+}
+
+.introduction {
+  grid-column: centre-start / centre-end;
+
+  display: grid;
+  grid-template-columns: 50rem 1fr;
+  grid-template-rows: repeat(2, min-content);
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-img svg {
+  height: 40rem;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+/* ==================== HOW YOSOR SECTION  ====================*/
+
+.how-yosor-section {
+  grid-column: full-start / full-end;
+  background-color: var(--section-bg);
+  border-radius: 2rem;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 20vh);
+  column-gap: 3.5rem;
+  padding: 0 3rem;
+}
+
+.step {
+    font-family: var(--font-paragraph);
+    background-color: darksalmon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.2rem;
+    padding-bottom: 3rem;
+}
+
+.step--1 {
+  grid-row: 1 / 5;
+  background-color: var(--purple--light-1);
+}
+.step--2 {
+  grid-row: 2 / 6;
+  background-color: var(--purple--light-2);
+}
+.step--3 {
+  grid-row: 3 / 7;
+  background-color: var(--purple--light-3);
+}
+.step--4 {
+  grid-row: 4 / 8;
+  background-color: var(--main-purple);
+}
+
+.step-number {
+    color: var(--step-number-colour);
+    font-size: 8rem;
+    margin-top: 1.4rem;
+}
+
+.step-detail {
+    color: var(--step-detail-colour);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.step-detail h4,
+.item-detail h4 {
+    font-family: var(--font-heading);
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 0 1.2rem;
+}
+
+.step-detail p,
+.item-detail p {
+    font-family: inherit;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 500;
+    padding: 0 4rem;
+}
+
+/* ==================== DROPSHOP SECTION  ====================*/
+
+.dropshop-section {
+    grid-column: full-start / full-end;
+    background-color: pink;
+    border-radius: 2rem;
+}
+
+.dropshop-section .section-title {
+    color: #fff;
+}
+
+.how-container {
+    display: flex;
+    flex-direction: column;
+    gap: 9rem;
+    padding: 0 6rem;
+    position: relative;
+}
+
+.how-item {
+    background-color: peachpuff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.item-detail {
+    font-family: var(--font-paragraph);
+    width: 50%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.item-detail p {
+    font-size: 1.8rem;
+}
+
+.item-img {
+    width: 50%;
+}
+
+.item--4 .item-img svg {
+    height: 18rem;
+}
+
+.dot {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    background-color: var(--body-colour);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(50% - 10px);
+}
+
+.how-container::before {
+    content: "";
+    height: 100%;
+    width: 1px;
+    /* background-color: rgba(255,255,255,.3); */
+    background-color: var(--body-colour);;
+    position: absolute;
+    left: 50%;
+    top: 0;
+
+    z-index: 10;
+}
