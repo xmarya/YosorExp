@@ -127,7 +127,7 @@ img {
 
 .grey-paragraph {
     text-align: center;
-    font-family: var(--font-heading);
+    font-family: inherit;
     color: var(--sub-paragraph-colour);
     font-size: 1.8rem;
 }

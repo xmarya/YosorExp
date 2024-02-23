@@ -81,6 +81,7 @@
 /* ================== STATS SECTION ==================*/
 
 .stats-section {
+  font-family: var(--font-heading);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,7 +98,6 @@
 
 .stats {
   color: var(--purple--light-2);
-  font-family: var(--font-heading);
   font-size: 4rem;
   font-weight:700;
   line-height: 1.2;
