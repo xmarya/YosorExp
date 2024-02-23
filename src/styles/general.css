@@ -2,6 +2,9 @@
     --body-colour: #F8F8F8;
     --main-purple:#78509C;
     --secondary-purple: hsl(272, 32%, 46%, 54%); 
+    --purple--light-1: #C9B9D7;
+    --purple--light-2: #AE96C4;
+    --purple--light-3: #9373B0;
     --main-blue: #03A7D3;
     --secondary-blue: hsl(193, 97%, 42%, 54%);
 
@@ -28,7 +31,7 @@
     margin: 0;
 }
 
-*:focus {
+*:focus:not(:hover) {
     outline: 0.3rem solid var(--main-blue);
     outline-offset: 0.2rem;
   }
@@ -205,6 +208,51 @@ img {
   }
   
 
+  /* ================== FORM ==================*/
+
+  form {
+    display: grid;
+    grid-template-columns: minmax(auto, 55rem);
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+  }
+  
+  form > *,
+  form > div > input,
+  form > div > select {
+    text-align: right;
+    padding: 0.9rem;
+    font-size: 1.6rem;
+    font-family: var(--font-paragraph);
+    font-weight: 500;
+    color: var(--main-font-colour);
+  }
+  
+  form *:focus {
+    outline-color: var(--main-blue);
+  }
+  
+  form input {
+    height: 4rem;
+  }
+  
+  form textarea {
+    resize: none;
+  }
+  
+  form .cta-btn {
+    text-align: center;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    width: 20rem;
+    justify-self: center;
+  
+    cursor: pointer;
+  
+  }
+  
   /* ================== FOOTER ==================*/
 
   .footer {

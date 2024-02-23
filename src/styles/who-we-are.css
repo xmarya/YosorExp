@@ -1,7 +1,4 @@
 :root {
-    --purple--light-1: #C9B9D7;
-    --purple--light-2: #AE96C4;
-    --purple--light-3: #9373B0;
     --step-number-colour: #DEE2E6;
     --step-detail-colour: #F8F9FA;
 }
@@ -249,10 +246,21 @@
 
 }
 
-#squares g {
+/* #squares g {
     animation: goUp 4s ease forwards infinite;
     animation-delay: calc(var(--order) * 200ms);
+} */
+
+#boxes g{
+    opacity: 0;
+    animation: dropIn 3s ease forwards infinite;
+    animation-delay: calc(var(--order) * 150ms);
 }
+
+@keyframes newDropIn {
+    
+}
+
 
 @keyframes goUp {
     20% {

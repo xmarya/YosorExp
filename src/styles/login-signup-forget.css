@@ -1,0 +1,55 @@
+.centre-logo {
+    grid-column: centre-start / centre-end;
+    width: 25%;
+    margin: 0 auto;
+}
+
+
+ .login-form {
+    background-color: var(--section-bg);
+    grid-column: centre-start / centre-end;
+    display: grid;
+    grid-template-columns: 35rem;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    padding: 4.5rem 0;
+ }
+
+ .login-form .section-title {
+    font-family: var(--font-paragraph);
+    font-size: 5rem;
+ }
+
+ .login-form h3 {
+    font-size: 2rem;
+    font-weight: 500;
+ }
+
+ .login-form div:not(.help-links) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+ }
+
+.help-links {
+    display: flex;
+    /* gap: 1.2rem; */
+    font-size: 1.4rem;
+    font-family: var(--font-paragraph);
+    color: var(--main-purple);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.help-links a:hover {
+    color: var(--secondary-purple);
+}
+
+input[type="file"] {
+    height: 4.2rem;
+    border: 1px var(--main-purple) solid;
+    background-color: #fff;
+}

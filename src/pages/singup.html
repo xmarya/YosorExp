@@ -5,87 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400..700&display=swap" rel="stylesheet">
     <link  rel="stylesheet" href="../styles/general.css"></link>
-    <link  rel="stylesheet" href="../styles/who-we-are.css"></link>
-    <title>YosorExp | التسجيل</title>
+    <link  rel="stylesheet" href="../styles/login-signup-forget.css"></link>
+    <title>YosorExp | دخول</title>
 </head>
 <body>
-
     <div class="grid-container">
-        <nav class="nav-bar">
-            <div class="btn-container">
-
-                <a href="./selling-with-us.html" class="cta-btn">تسجيل الدخول</a>
-            </div>
-            <ul class="nav-links">
-                <li class="link">
-                    <a href="../../index.html#contact-us">
-                        تواصل معنا
-                    </a>
-                </li>
-                <li class="link">
-                    <a href="./pricing.html">
-                        الباقات
-                    </a>
-                </li>
-                <li class="link">
-                    <a href="./print-on-product.html">
-                        طباعة على المنتج
-                    </a>
-                </li>
-                <li class="link">
-                    <a href="./selling-with-us.html">
-                        بيع المنتجات
-                    </a>
-                </li>
-                <li class="link">
-                    <a href="./who-we-are.html">
-                        من نحن
-                    </a>
-                </li>
-            </ul>
-            <div class="logo-nav">
-                <a href="../../index.html">
-                    <img  src="../assets/logo-nobg.png" alt="Yosor-logo">
-                </a>
-            </div>
-        </nav>
-
-        <footer class="footer">
-            <a href="../../index.html">
-                <img src="../assets/white-logo-nobg.png" alt="white-logo">
+        <div class="centre-logo">
+            <a href="../../index.html#">
+                <img src="../assets/logo-nobg.png" alt="logo">
             </a>
-            <ul class="contact">
-                <h4>تواصل</h4>
-            </ul>
-            <ul class="footer-links">
-                <h4>روابط مهمة</h4>
-                <li>
-                    <a class="link" href="./who-we-are.html">من نحن</a>
-                </li>
-                <li>
-                    <a class="link" href="#our-services">الخدمات</a>
-                </li>
-                <li>
-                    <a class="link" href="./pricing.html">الباقات</a>
-                </li>
-                <li>
-                    <a class="link" href="../../index.html#contact-us">تواصل معنا</a>
-                </li>
-                <li>
-                    <a class="link" href="./login.html">منطقة التاجر</a>
-                </li>
-                <li>
-                    <a class="link" href="./legals.html">اتفاقية الاستخدام</a>
-                </li>
-            </ul>
-            <div class="info">
-                <h4>معلومات</h4>
-                <p>
-                    نهدف إلى جعل العمل أسهل لجميع بائعي المنتجات عن طريق الطرح، لذلك لا تتردد في التواصل معنا بشأن إستفساراتك وإحتياجاتك                </p>
+        </div>
+
+        
+
+        <form action="submit" class="login-form">
+            <h2 class="section-title">
+                ! أهـلًا بـك
+            </h2>
+            <h3>: معلومات عامة</h3>
+            <div>
+                <label for="full-name">: الاسم</label>
+                <input required type="text" name="full-name" id="full-name">
             </div>
-        </footer>
+            <div>
+                <label for="email">: البريد الإلكتروني</label>
+                <input required type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="phone">: رقم التواصل</label>
+                <input required type="tel" name="phone" id="phone">
+            </div>
+            <div>
+                <label for="city">: المدينة</label>
+                <input required type="text" name="city" id="city">
+            </div>
+            <div>
+                <label for="address">: العنوان</label>
+                <input required type="text" name="address" id="address">
+            </div>
+            <div>
+                <label for="postal-code">: الرمز البريدي</label>
+                <input required type="text" name="postal-code" id="postal-code">
+            </div>
+            <div>
+                <label for="business-type">: نوع التجارة</label>
+                <select required name="business-type" id="business-type">
+                    <option value="">اختر</option>
+                    <option value="1">تاجر جملة</option>
+                    <option value="2">تاجر محلي</option>
+                    <option value="3">تاجر شركة كبرى</option>
+                    <option value="4">تاجر شركة متوسطة</option>
+                    <option value="5">تاجر شركة صغيرة</option>
+                </select>
+            </div>
+            <div>
+                <label for="currency-type">: نوع العملة</label>
+                <select required name="business-type" id="business-type">
+                    <option value="">اختر</option>
+                    <option value="1">دولار أمريكي</option>
+                    <option value="2">ريال سعودي</option>
+                    <option value="3">يورو</option>
+                    <option value="4">درهم إماراتي</option>
+                    <option value="5">دينار كويتي</option>
+                    <option value="6">دولار كندي</option>
+                </select>
+            </div>
+            <div>
+                <label for="business-file">: السجل تجاري للمنشئة (أو وثيقة العمل الحر)</label>
+                <input required class="custom-file-input" type="file" name="business-file" id="business-file" accept="image/png, image/jpeg, .pdf, .doc, .docx">
+            </div>
+
+            <h3>: معلومات التواصل</h3>
+            <div>
+                <label for="title">: اللقب</label>
+                <select required name="title" id="title">
+                    <option value="">اختر</option>
+                    <option value="1">سيد</option>
+                    <option value="2">سيدة</option>
+                    <option value="3">آنسة</option>
+                </select>
+            </div>
+            <div>
+                <label for="first-name">: الاسم الأول</label>
+                <input required type="text" name="first-name" id="first-name">
+            </div>
+            <div>
+                <label for="father-name">: اسم الأب</label>
+                <input required type="text" name="father-name" id="father-name">
+            </div>
+            <div>
+                <label for="surname">: اسم العائلة</label>
+                <input required type="text" name="surname" id="surname">
+            </div>
+            <div>
+                <label for="email">: البريد الإلكتروني</label>
+                <input required type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="email-2">: البريد الإلكتروني البديل</label>
+                <input required type="email" name="email-2" id="email-2">
+            </div>
+            <div>
+                <label for="phone">: الهاتف</label>
+                <input required type="tel" name="phone" id="phone">
+            </div>
+            <div>
+                <label for="lang">: اللغة</label>
+                <select required name="lang" id="lang">
+                    <option value="">اختر</option>
+                    <option value="1">العربية</option>
+                    <option value="2">الإنجليزي</option>
+                </select>
+            </div>
+
+            <button class="cta-btn">تسجيل</button>
+        </form>
 
     </div>
-    
 </body>
 </html>
