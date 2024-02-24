@@ -1,6 +1,14 @@
 .pricing-container {
     grid-column: centre-start / centre-end;
     font-family: var(--font-heading);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-container .grey-paragraph {
+    margin-top: -3rem;
+    margin-bottom: 5rem;
 }
 
 .packages {
