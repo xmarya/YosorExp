@@ -96,7 +96,7 @@ img {
     text-align: center;
     font-size: 2rem;
     color: var(--sub-paragraph-colour);
-    margin-bottom: 4rem;
+    margin-bottom: 5.5rem;
 }
 
 .section-title {
@@ -106,7 +106,7 @@ img {
     color: var(--main-font-colour);
     text-align: center;
     margin-top: 10rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .section-paragraph {
@@ -120,6 +120,7 @@ img {
 
 .bold-text {
     text-align: right;
+    direction: rtl;
     font-family: var(--font-heading);
     font-size: 1.8rem;
     font-weight: 600;

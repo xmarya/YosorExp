@@ -108,7 +108,6 @@
 
 .btn-container div {
     font-family: var(--font-paragraph);
-    /* background-color: var(--secondary-purple); */
     /* background: linear-gradient(175deg, rgba(120,80,156,1) 40%, rgba(63,122,183,1) 61%, rgba(3,167,211,1) 86%); */
     /* background: linear-gradient(175deg, rgba(120,80,156,1) 60%, rgba(63,122,183,1) 76%, rgba(3,167,211,1) 107%); */
     background: linear-gradient(175deg, rgba(120,80,156,1) 36%, rgba(63,122,183,1) 76%, rgba(3,167,211,1) 107%);
