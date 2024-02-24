@@ -48,6 +48,7 @@ body {
 
 section {
     margin-top: var(--section-margin-top);
+    transition: all 0.3s ease-in;
 }
 
 p {
@@ -167,6 +168,11 @@ img {
 .cta-btn:active {
     transform: translateY(1px);
     box-shadow: none;
+}
+
+.section-hidden {
+  opacity: 0;
+  transform: translate(10rem, 10rem);
 }
 
 

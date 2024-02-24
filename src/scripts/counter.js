@@ -4,7 +4,6 @@ let speed = 200;
 
 export const startCounter = () => {
     stat.forEach(stat => {
-        console.log("fore");
         let target = stat.dataset.count;
         let init = +stat.innerText;
         let increment = Math.floor(target / speed);
