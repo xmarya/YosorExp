@@ -25,7 +25,8 @@ h4 {
     margin-bottom: 0.8rem;
 }
 
-p, ul {
+p, ul:not(.nav-links) {
+    direction: rtl;
     max-width: 75%;
     display: inline-block;
     font-size: 1.6rem;
@@ -33,8 +34,6 @@ p, ul {
 }
 
 ul {
-    list-style:decimal;
-    direction: rtl;
     padding-right: 2rem;
 }
 

@@ -2,8 +2,6 @@ import { startCounter } from "./src/scripts/counter.js";
 import { startSlider } from "./src/scripts/slider.js";
 import { clickTab } from "./src/scripts/tabsComponent.js";
 
-// document.querySelector(".stats-section") && startCounter();
-document.querySelector(".reviews-section") && startSlider();
 
 const tabsContainer = document.querySelector(".tabs");
 
@@ -23,6 +21,7 @@ const revealSection = function (entries, observer) {
 
   entry.target.classList.remove("section-hidden");
   if (entry.target.className === "stats-section") startCounter();
+  if (entry.target.className === "reviews-section") startSlider();
   observer.unobserve(entry.target);
 };
 
