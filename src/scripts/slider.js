@@ -68,14 +68,20 @@ const setPrev = () => {
 const goPrev = document.querySelector(".go-prev");
 goPrev && goPrev.addEventListener("click", function (event) {
   event.preventDefault();
+  // stop the loop to prevent slides' conflict:
+  clearInterval(loop);
   setPrev();
+  loop = setInterval(setNext, 4000);
 });
 
 const goNext = document.querySelector(".go-next");
 
 goNext && goNext.addEventListener("click", function (event) {
   event.preventDefault();
+  // stop the loop to prevent slides' conflict:
+  clearInterval(loop);
   setNext();
+  loop = setInterval(setNext, 4000);
 });
 
 document.addEventListener("keydown", function (event) {

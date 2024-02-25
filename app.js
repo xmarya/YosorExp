@@ -20,8 +20,8 @@ const revealSection = function (entries, observer) {
   if (entry.target.className.includes("form")) return;
 
   entry.target.classList.remove("section-hidden");
-  if (entry.target.className === "stats-section") startCounter();
-  if (entry.target.className === "reviews-section") startSlider();
+  if (entry.target.className === "stats-section") setTimeout( () => {(startCounter())}, 100);
+  if (entry.target.className === "reviews-section") setTimeout(() => {startSlider()}, 100);
   observer.unobserve(entry.target);
 };
 
@@ -36,3 +36,12 @@ allSection.forEach((section) => {
     section.classList.add("section-hidden");
   }
 });
+
+
+const hamburgerMenu = document.querySelector(".menu-hamburger");
+const tpNav = document.querySelector(".tp-nav");
+
+hamburgerMenu && hamburgerMenu.addEventListener("click", () => {
+  hamburgerMenu.classList.toggle("menu-hamburger--active");
+  tpNav.classList.toggle("tp-nav--show");
+})
