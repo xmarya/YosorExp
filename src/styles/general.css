@@ -356,6 +356,19 @@ form .cta-btn {
   .steps-container {
     grid-template-rows: repeat(8, 20vh);
   }
+
+  .print-on-section {
+    padding: 0 4rem !important;
+  }
+
+  .how-to-print {
+    width: 60% !important;
+    padding-left: 0 !important;
+  }
+
+  .how-to-print div {
+    padding: 3rem !important;
+  }
 }
 
 
@@ -440,6 +453,11 @@ form .cta-btn {
 
   .selling-features .section-paragraph {
     max-width: 83% !important;
+  }
+
+  .how-to-print {
+    width: 70% !important;
+
   }
 }
 
@@ -736,12 +754,25 @@ form .cta-btn {
     font-size: 3rem !important;
   }
 
+  .how-to-print {
+    width: 100% !important;
+
+  }
+
 }
 
 @media screen and (max-width: 36.5em) {
   /* 584 /16*/
   .step-detail p {
     padding: 0 0.7rem !important;
+  }
+
+  .print-on-section .section-title {
+    font-size: 3rem !important;
+  }
+
+  .print-on-section .section-paragraph {
+    font-size: 1.6rem !important;
   }
 }
 
