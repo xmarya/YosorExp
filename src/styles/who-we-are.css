@@ -13,7 +13,6 @@
 
   display: grid;
   grid-template-columns: 50rem 1fr;
-  grid-template-rows: repeat(2, min-content);
   align-items: center;
   justify-content: center;
 }
@@ -29,9 +28,14 @@
 }
 
 .intro-text {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.intro-text .section-paragraph {
+    direction: rtl;
+
 }
 
 
@@ -102,6 +106,7 @@
 
 .step-detail p,
 .item-detail p {
+    direction: rtl;
     font-family: inherit;
     font-size: 1.6rem;
     text-align: center;

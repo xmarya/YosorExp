@@ -330,10 +330,40 @@ form .cta-btn {
 
 /* ================== MEDIA QUERIES ==================*/
 
+@media screen and (max-width: 71.25em) {
+  /*1140 / 16*/
+
+  .step {
+    gap: 0 !important;
+  }
+  .step-detail p {
+    padding: 0 0.8rem !important;
+  }
+}
+
 @media screen and (max-width: 62.5em) {
   /* 1000 / 16px */
   .nav-bar {
     grid-template-columns: min-content 60% 15%;
+  }
+
+  .introduction {
+    grid-template-columns: 40rem 1fr !important;
+    gap: 2rem;
+    padding: 0 4rem;
+  }
+
+  .steps-container {
+    grid-template-rows: repeat(8, 20vh);
+  }
+}
+
+
+@media screen and (max-width: 60.13em) {
+  /* 962 /16 */
+  .selling-features {
+    padding: 0 1rem !important;
+
   }
 }
 
@@ -361,6 +391,18 @@ form .cta-btn {
   .contact {
     font-size: 1.4rem;
   }
+
+  .steps-container {
+    column-gap: 2rem !important;
+  }
+
+  .how-container {
+    padding: 0 3rem !important;
+  }
+
+  .item-img {
+    width: 40% !important;
+  }
 }
 
 @media screen and (max-width: 52.13em) {
@@ -386,9 +428,63 @@ form .cta-btn {
     grid-template-columns: repeat(2, minmax(auto, 24rem));
     grid-template-rows: 10rem;
   }
+
+  .introduction {
+    grid-template-columns: 1fr !important;
+    gap: 0;
+  }
+
+  .intro-text {
+    grid-row: 1 / 2;
+  }
+
+  .selling-features .section-paragraph {
+    max-width: 83% !important;
+  }
 }
 
-@media screen and (max-width: 74.64em) {
+@media screen and (max-width: 50em) {
+  /* 800 / 16*/
+  .steps-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    column-gap: 2rem !important;
+    row-gap: 4rem !important;
+    padding: 0 6rem !important;
+  }
+
+  .step--1,
+  .step--3 {
+    grid-column: 2 / 3;
+  }
+
+  .step--2,
+  .step--4 {
+    grid-column: 1 /2;
+  }
+
+  .step--1 {
+    grid-row: 1 / 4 !important;
+  }
+
+  .step--2 {
+    grid-row: 2 / 5 !important;
+  }
+
+  .step--3 {
+    grid-row: 4 / 7 !important;
+  }
+
+  .step--4 {
+    grid-row: 5 / 8 !important;
+  }
+
+  .step-detail p {
+    padding: 0 6rem !important;
+  }
+
+}
+
+@media screen and (max-width: 47.64em) {
   /* 762 / 16px */
 
   .nav-bar {
@@ -420,6 +516,10 @@ form .cta-btn {
   .footer {
     grid-template-columns: 25rem repeat(3, 1fr);
     gap: 2.5rem;
+  }
+
+  .features-box {
+    padding: 4rem 2rem !important;
   }
 }
 
@@ -504,7 +604,7 @@ form .cta-btn {
     justify-content: space-evenly;
     position: fixed;
     top: 0;
-    right: -30rem;
+    right: -35rem;
     width: 45vw;
     height: 90vh;
     background-color: var(--main-purple);
@@ -565,6 +665,42 @@ form .cta-btn {
   }
 }
 
+@media screen and (max-width: 42.9em){
+ /* 686 / 16*/
+ .introduction {
+  grid-template-columns: 45rem !important;
+  padding: 0;
+  margin-top: 3rem;
+ }
+
+ .step-detail p {
+  padding: 0 2rem !important;
+}
+
+.how-container {
+  gap: 12rem !important;
+}
+
+  .how-item {
+    flex-direction: column-reverse !important;
+    gap: 1.8rem !important;
+  }
+
+  .item-img {
+    width: 70% !important;
+    margin-right: 0 !important;
+  }
+
+  .dot,
+  .how-container::before {
+    display: none;
+  }
+
+  .selling-features .section-paragraph {
+    max-width: 95% !important;
+  }
+}
+
 @media screen and (max-width: 39em) {
   /* 624 / 16*/
 
@@ -582,6 +718,30 @@ form .cta-btn {
   }
   .go-next {
     margin-left: 8rem;
+  }
+
+  .selling-header .hero-title {
+   font-size: 4.2rem !important;
+  }
+
+  .selling-header .sub-title {
+    width: 61% !important;
+  }
+
+  .features-box {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .selling-features .section-title {
+    font-size: 3rem !important;
+  }
+
+}
+
+@media screen and (max-width: 36.5em) {
+  /* 584 /16*/
+  .step-detail p {
+    padding: 0 0.7rem !important;
   }
 }
 
@@ -623,6 +783,24 @@ form .cta-btn {
   .go-prev {
     left: 30%;
   }
+
+  .step-detail p {
+    font-size: 1.3rem !important;
+    font-weight: 700 !important;
+  }
+
+  .features-box {
+    grid-template-columns: 1fr !important;
+    gap: 10rem !important;
+  }
+
+  .feature--1, 
+  .feature--2, 
+  .feature--3, 
+  .feature--4, 
+  .feature--5 { 
+    grid-column: 1 / 2 !important;
+  }
 }
 
 @media screen and (max-width: 31.13em) {
@@ -630,6 +808,15 @@ form .cta-btn {
 
   html {
     font-size: 55%;
+  }
+
+  .step-detail p {
+    font-size: 1.6rem !important;
+    font-weight: 700 !important;
+  }
+
+  .selling-header img {
+    max-width: 95% !important;
   }
 }
 
@@ -655,11 +842,6 @@ form .cta-btn {
     width: 80% !important;
   }
 
-  .contact-section,
-  .footer {
-    grid-column: col-start 2 / col-start 7 !important;
-  }
-
   .contact-section .form {
     width: 75%;
   }
@@ -667,5 +849,124 @@ form .cta-btn {
   .footer {
     grid-template-columns: 70%;
     justify-content: center;
+  }
+
+  .steps-container {
+    padding: 0 2rem !important;
+  }
+
+  .dropshop-section .section-title {
+    font-size: 3.6rem !important;
+  }
+
+  .item-detail p {
+    font-size: 2rem !important;
+    padding: 0 !important;
+  }
+
+  .selling-header .hero-title {
+    font-size: 4rem !important;
+   }
+ 
+   .selling-header .sub-title {
+     font-size: 1.8rem !important;
+   }
+}
+
+@media screen and (max-width: 25.63em) {
+  /* 444 / 16*/
+
+  html {
+    font-size: 45%;
+  }
+
+  .nav-bar {
+    justify-content: start;
+  }
+
+  .tp-nav {
+    height: 70vh;
+  }
+  
+  .tp-nav .nav-links {
+    font-size: 1.8rem;
+
+  }
+
+  .tp-nav .btn-container {
+    width: 16rem;
+  }
+
+  .copy-rights {
+    font-size: 1.5rem;
+  }
+
+  .steps-container {
+    grid-template-rows: repeat(8, 17vh) !important;
+    padding: 0 0.8rem !important;
+  }
+
+  .step-detail p {
+    font-size: 1.8rem !important;
+    padding: 0 2rem !important;
+  }
+
+  .how-container {
+    gap: 7rem !important;
+  }
+
+  .how-item {
+    gap: 0 !important;
+  }
+
+  .item--4 .item-img {
+    width: 85% !important;
+  }
+
+}
+
+@media screen and (max-width: 21.75em) {
+  /* 348 / 16*/
+  html {
+    font-size: 40%;
+  }
+
+  .services-list {
+    grid-template-rows: 17rem !important;
+  }
+
+  .service-detail .bold-text {
+    font-size: 1.8rem;
+  }
+
+  .service-detail .section-paragraph {
+    font-size: 1.8rem;
+  }
+
+  .list-item {
+    padding: 3.4rem !important;
+  }
+
+  .stats span {
+    font-size: 7.5rem !important;
+  }
+  .stats p:nth-child(2) {
+    font-size: 4rem;
+  }
+
+  .grey-paragraph {
+    font-size: 2.4rem;
+  }
+
+  .steps-container {
+    grid-template-rows: repeat(8, 15vh) !important;
+  }
+}
+
+
+@media screen and (max-width: 19.38em) {
+  /* 310 / 16*/
+  html {
+    font-size: 39%;
   }
 }

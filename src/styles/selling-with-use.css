@@ -26,6 +26,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 3rem;
 }
 
 .selling-features .section-title {
@@ -43,7 +44,6 @@
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(2, minmax(auto, 39rem));
-  grid-template-rows: repeat(5, 1fr);
   align-items: center;
   justify-items: end;
   gap: 3rem;
@@ -84,7 +84,16 @@
 
 .feature-detail .section-paragraph {
     text-align: right;
-    max-width: 100%;
+    width: 100%;
+    direction: rtl;
+}
+
+.feature-detail div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  gap: 0.8rem;
 }
 
 .feature-detail svg {
