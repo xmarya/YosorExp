@@ -7,6 +7,8 @@
   --purple--light-3: #9373b0;
   --main-blue: #03a7d3;
   --secondary-blue: hsl(193, 97%, 42%, 54%);
+  --step-number-colour: #DEE2E6;
+  --step-detail-colour: #F8F9FA;
 
   --section-bg: #f2f2f2;
   --section-margin-top: 14rem;
@@ -353,7 +355,8 @@ form .cta-btn {
     padding: 0 4rem;
   }
 
-  .steps-container {
+  .steps-container,
+  .seller-features {
     grid-template-rows: repeat(8, 20vh);
   }
 
@@ -366,7 +369,8 @@ form .cta-btn {
     padding-left: 0 !important;
   }
 
-  .how-to-print div {
+  .how-to-print div,
+  .how-to-connect div{
     padding: 3rem !important;
   }
 }
@@ -405,7 +409,8 @@ form .cta-btn {
     font-size: 1.4rem;
   }
 
-  .steps-container {
+  .steps-container,
+  .seller-features {
     column-gap: 2rem !important;
   }
 
@@ -451,9 +456,9 @@ form .cta-btn {
     grid-row: 1 / 2;
   }
 
-  .selling-features .section-paragraph {
+  /* .selling-features .section-paragraph {
     max-width: 83% !important;
-  }
+  } */
 
   .how-to-print {
     width: 70% !important;
@@ -463,7 +468,8 @@ form .cta-btn {
 
 @media screen and (max-width: 50em) {
   /* 800 / 16*/
-  .steps-container {
+  .steps-container,
+  .seller-features {
     grid-template-columns: repeat(2, 1fr) !important;
     column-gap: 2rem !important;
     row-gap: 4rem !important;
@@ -471,12 +477,15 @@ form .cta-btn {
   }
 
   .step--1,
-  .step--3 {
+  .step--3,
+  .seller-feature--1,
+  .seller-feature--3 {
     grid-column: 2 / 3;
   }
 
   .step--2,
-  .step--4 {
+  .step--4,
+  .seller-feature--2 {
     grid-column: 1 /2;
   }
 
@@ -500,6 +509,21 @@ form .cta-btn {
     padding: 0 6rem !important;
   }
 
+  .seller-feature--1 {
+    grid-row: 1 / 5 !important;
+  }
+
+  .seller-feature--2 {
+    grid-row: 3 / 7 !important;
+  }
+
+  .seller-feature--3 {
+    grid-row: 5 / 8 !important;
+  }
+
+  .how-to-connect {
+    padding: 2rem !important;
+  }
 }
 
 @media screen and (max-width: 47.64em) {
@@ -754,7 +778,8 @@ form .cta-btn {
     font-size: 3rem !important;
   }
 
-  .how-to-print {
+  .how-to-print,
+  .how-to-connect {
     width: 100% !important;
 
   }
@@ -767,7 +792,8 @@ form .cta-btn {
     padding: 0 0.7rem !important;
   }
 
-  .print-on-section .section-title {
+  .print-on-section .section-title,
+  .connect-to-section .section-title {
     font-size: 3rem !important;
   }
 
@@ -882,7 +908,8 @@ form .cta-btn {
     justify-content: center;
   }
 
-  .steps-container {
+  .steps-container,
+  .seller-features {
     padding: 0 2rem !important;
   }
 
@@ -932,7 +959,8 @@ form .cta-btn {
     font-size: 1.5rem;
   }
 
-  .steps-container {
+  .steps-container,
+  .seller-features{
     grid-template-rows: repeat(8, 17vh) !important;
     padding: 0 0.8rem !important;
   }
@@ -989,7 +1017,8 @@ form .cta-btn {
     font-size: 2.4rem;
   }
 
-  .steps-container {
+  .steps-container,
+  .seller-features {
     grid-template-rows: repeat(8, 15vh) !important;
   }
 }

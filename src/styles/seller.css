@@ -1,0 +1,131 @@
+
+.how-yosor-section {
+    grid-column: full-start / full-end;
+    background-color: var(--section-bg);
+    border-radius: 2rem;
+  }
+  
+  .seller-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 20vh);
+    column-gap: 3.5rem;
+    padding: 0 3rem;
+  }
+  
+  .step {
+      font-family: var(--font-paragraph);
+      background-color: darksalmon;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2.2rem;
+      padding-bottom: 3rem;
+  }
+  
+  .seller-feature--1 {
+    grid-row: 1 / 5;
+    background-color: var(--purple--light-1);
+  }
+  .seller-feature--2 {
+    grid-row: 2 / 6;
+    background-color: var(--purple--light-2);
+  }
+  .seller-feature--3 {
+    grid-row: 4 / 8;
+    background-color: var(--purple--light-3);
+  }
+  
+  .step-number {
+      color: var(--step-number-colour);
+      font-size: 8rem;
+      margin-top: 1.4rem;
+  }
+  
+  .step-detail {
+      color: var(--step-detail-colour);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+  }
+  
+  .step-detail h4,
+  .item-detail h4 {
+      font-family: var(--font-heading);
+      text-align: center;
+      font-size: 2.4rem;
+      padding: 0 1.2rem;
+  }
+  
+  .step-detail p,
+  .item-detail p {
+      direction: rtl;
+      font-family: inherit;
+      font-size: 1.6rem;
+      text-align: center;
+      font-weight: 500;
+      padding: 0 4rem;
+  }
+
+
+  .connect-to-section {
+    grid-column: centre-start / centre-end;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  
+  .connect-to-section .section-paragraph {
+    font-size: 1.8rem;
+    direction: rtl;
+  }
+  
+  
+  .how-to-connect {
+    background-color: var(--section-bg);
+    font-family: var(--font-heading);
+    width: 90%;
+    border-radius: 2rem;
+    align-self: center;
+    margin-top: 7rem;
+  
+    display: grid;
+    grid-template-rows: repeat(4, 10rem);
+    align-items: center;
+    justify-items: end;
+    gap: 3rem;
+    padding: 4rem;
+  }
+  
+  .how-to-connect div {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    align-items: center;
+    justify-items: center;
+    padding: 4rem;
+  }
+  
+  .how {
+    grid-column: 1 / 2;
+    color: var(--main-purple);
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
+  .how-number {
+    grid-column: 2 / 3;
+    border-radius: 100%;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--main-blue);
+    color: #fff;
+    font-size: 3rem;
+    font-family: inherit;
+    font-weight: 500;
+  
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
