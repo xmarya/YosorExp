@@ -49,6 +49,7 @@ html {
 
 body {
   background-color: var(--body-colour);
+  overflow-x: hidden;
 }
 
 section {
@@ -433,7 +434,7 @@ form .cta-btn {
   .nav-bar {
     grid-template-columns: min-content 50% 25%;
     gap: 1rem;
-    margin-right: -7rem;
+    /* margin-right: -7rem; */
   }
   .nav-links {
     gap: 3rem;
@@ -604,8 +605,9 @@ form .cta-btn {
   .menu-hamburger {
     display: block;
     position: fixed;
-    top: 3rem;
-    right: 4rem;
+    top: 4%;
+    right: 3%;
+    /* left: 0; */
     width: 4rem;
     height: 5rem;
 
