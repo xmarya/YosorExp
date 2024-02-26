@@ -4,6 +4,10 @@
     background-color: var(--section-bg);
     border-radius: 2rem;
   }
+
+  .selling-header .hero-title {
+    direction: rtl;
+  }
   
   .seller-features {
     display: grid;

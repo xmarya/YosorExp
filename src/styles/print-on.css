@@ -11,6 +11,27 @@
   direction: rtl;
 }
 
+.how-to-print-detail {
+  display: grid;
+  grid-template-columns: 50rem 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.how-to-print-detail div {
+  display: flex;
+  flex-direction: column;
+}
+
+.how-to-print-detail h2 {
+  text-align: right;
+}
+
+.how-to-print-detail img {
+  width: 80%;
+  justify-self: end;
+}
+
 
 .how-to-print {
   background-color: var(--section-bg);
