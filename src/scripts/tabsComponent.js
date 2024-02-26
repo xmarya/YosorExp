@@ -21,12 +21,9 @@ export const clickPackageTab = (clicked) => {
   });
 
   packageDetail.forEach(pd => {
-    if(pd.dataset.tab === clicked.dataset.tab) {
-      console.log("if before", pd);
-      
+    if(pd.dataset.tab === clicked.dataset.tab) {      
       pd.classList.remove("display-none");
       pd.classList.add("tab-detail--active");
-      console.log("if after", pd);
     }
     else {
       pd.classList.remove("tab-detail--active");
