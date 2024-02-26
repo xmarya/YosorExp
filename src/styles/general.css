@@ -1107,7 +1107,7 @@ form .cta-btn {
 @media screen and (max-width: 24.5em) {
   /* 390 / 16 */
   .stats span {
-    font-size: 3.6rem !important;
+    font-size: 3.2rem !important;
   }
 
   .steps-container, .seller-features {
