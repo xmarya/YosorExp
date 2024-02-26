@@ -1113,6 +1113,10 @@ form .cta-btn {
     font-size: 1.8rem;
   }
 
+  .introduction {
+    grid-template-columns: 40rem !important;
+  }
+
 }
 
 @media screen and (max-width: 21.75em) {

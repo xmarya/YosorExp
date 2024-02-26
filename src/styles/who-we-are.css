@@ -163,6 +163,10 @@
     margin-right: 10rem;
 }
 
+.item-img svg {
+    height: 20rem;
+}
+
 .item--4 .item-img svg {
     height: 18rem;
 }
