@@ -91,6 +91,18 @@ img {
     )
     [centre-end] minmax(0.7rem, 1fr) [full-end];
 }
+.nav-bar,
+.hero-section,
+.contact-section {
+  grid-column: centre-start / centre-end;
+}
+
+.our-services-section,
+.stats-section,
+.reviews-section {
+  grid-column: full-start / full-end;
+}
+
 
 .hero-title {
   font-family: var(--font-heading);

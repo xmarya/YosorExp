@@ -1,14 +1,3 @@
-.nav-bar,
-.hero-section,
-.contact-section {
-  grid-column: centre-start / centre-end;
-}
-
-.our-services-section,
-.stats-section,
-.reviews-section {
-  grid-column: full-start / full-end;
-}
 
 /* ================== HERO SECTION ==================*/
 
