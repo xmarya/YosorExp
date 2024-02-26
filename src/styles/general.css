@@ -986,6 +986,64 @@ form .cta-btn {
   }
 }
 
+@media screen and (max-width: 26.75em) {
+ /* 412 / 16 = 25.75em || 428 / 16 = 26.75*/
+
+ .hero-title {
+  font-size: 4rem;
+  width: 87%;
+ }
+
+ .service-detail .bold-text {
+  font-size: 1.8rem;
+ }
+ .service-detail .section-paragraph {
+   
+   font-size: 1.6rem;
+ }
+
+ .slider-container {
+  grid-template-rows: 30vh;
+ }
+
+ .steps-container {
+  grid-template-rows: repeat(8, 12vh) !important;
+ }
+ .item-img:not(.special) {
+  width: 55% !important;
+ }
+
+ .how-container {
+  margin-bottom: 3rem !important;
+ }
+
+ .tp-nav {
+  height: 50vh;
+
+ }
+ .selling-features {
+  grid-column: full-start / full-end !important;
+ }
+
+ .selling-features .cta-box {
+  column-gap: 4rem !important;
+
+ }
+
+ .how-yosor-section .section-title {
+  font-size: 3rem !important;
+ }
+
+ .seller-feature--2 {
+  grid-row: 3 / 6 !important;
+}
+
+.how .bold-text {
+  font-size: 1.4rem;
+}
+
+}
+
 @media screen and (max-width: 25.63em) {
   /* ?? / 16*/
 
@@ -1035,6 +1093,26 @@ form .cta-btn {
   .item--4 .item-img {
     width: 85% !important;
   }
+}
+
+@media screen and (max-width: 24.5em) {
+  /* 390 / 16 */
+  .stats span {
+    font-size: 3.6rem !important;
+  }
+
+  .steps-container, .seller-features {
+    grid-template-rows: repeat(8, 11vh) !important;
+  }
+
+  .item-img:not(.special) {
+    width: 45% !important;
+   }
+
+   .how .bold-text {
+    font-size: 1.8rem;
+  }
+
 }
 
 @media screen and (max-width: 21.75em) {
