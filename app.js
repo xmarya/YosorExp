@@ -1,6 +1,6 @@
 import { startCounter } from "./src/scripts/counter.js";
 import { startSlider } from "./src/scripts/slider.js";
-import { clickTab } from "./src/scripts/tabsComponent.js";
+import { clickTab, clickPackageTab } from "./src/scripts/tabsComponent.js";
 
 
 const tabsContainer = document.querySelector(".tabs");
@@ -44,4 +44,14 @@ const tpNav = document.querySelector(".tp-nav");
 hamburgerMenu && hamburgerMenu.addEventListener("click", () => {
   hamburgerMenu.classList.toggle("menu-hamburger--active");
   tpNav.classList.toggle("tp-nav--show");
+});
+
+
+
+const packagesTabContainer = document.querySelector(".packages-tabs");
+packagesTabContainer && document.addEventListener("click", event => {
+  const clicked = event.target.closest(".tab");
+  if (!clicked) return;
+  clickPackageTab(clicked);
+  
 })

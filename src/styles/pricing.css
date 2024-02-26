@@ -25,12 +25,20 @@
     padding: 0 3rem;
 }
 
+.packages-tabs {
+    display: flex;
+    gap: 6rem;
+}
+
+
 .package--1,
 .package--3 {
     background: linear-gradient(175deg, rgba(120,80,156,1) 36%, rgba(63,122,183,1) 76%, rgba(3,167,211,1) 107%);
     border-radius: 1rem;
     grid-row: 2 / 6;
 }
+
+
 
 .package--2 {
     grid-row: 1 / 5;
@@ -106,4 +114,60 @@
     flex-direction: column;
     align-items: start;
     margin-top: 4rem;
+}
+
+
+.tp-packages {
+    display: none;
+    color: #fff;
+
+}
+
+.tab--1,
+.tab--3 {
+    background: linear-gradient(175deg, rgba(120,80,156,1) 36%, rgba(63,122,183,1) 76%, rgba(3,167,211,1) 107%);
+   
+}
+
+.tab--2 {
+    background-color: var(--main-blue);
+}
+
+.tab--1,
+.tab--2,
+.tab--3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    width: 15rem;
+    height: 7rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-detail--active {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    background-color: var(--section-bg);
+    border-radius: 1rem;
+    box-shadow: var(--shadow-md);
+    padding-bottom: 1.5rem;
+
+}
+
+.tab-detail--active .price-box {
+    color: var(--main-font-colour);
+}
+
+.active--package-tab {
+    transform: translateY(-2.5rem);
+    box-shadow: var(--shadow-bg);
 }

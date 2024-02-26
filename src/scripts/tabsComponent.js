@@ -11,3 +11,26 @@ export const clickTab = (clicked) => {
     f.id === clicked.dataset.tab ? f.classList.remove("display-none") : f.classList.add("display-none");
   });
 }
+
+const packageTab = document.querySelectorAll(".packages-tabs .tab");
+const packageDetail = document.querySelectorAll("#tab-detail");
+
+export const clickPackageTab = (clicked) => {
+  packageTab.forEach((t) => {
+    t.dataset.tab === clicked.dataset.tab ? t.classList.add("active--package-tab") : t.classList.remove("active--package-tab");
+  });
+
+  packageDetail.forEach(pd => {
+    if(pd.dataset.tab === clicked.dataset.tab) {
+      console.log("if before", pd);
+      
+      pd.classList.remove("display-none");
+      pd.classList.add("tab-detail--active");
+      console.log("if after", pd);
+    }
+    else {
+      pd.classList.remove("tab-detail--active");
+      pd.classList.add("display-none");
+    }
+  });
+}
