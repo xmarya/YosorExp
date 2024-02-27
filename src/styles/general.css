@@ -2,9 +2,13 @@
   --body-colour: #f8f8f8;
   --main-purple: #78509c;
   --secondary-purple: hsl(272, 32%, 46%, 54%);
-  --purple--light-1: #c9b9d7;
+  /* --purple--light-1: #c9b9d7;
   --purple--light-2: #ae96c4;
-  --purple--light-3: #9373b0;
+  --purple--light-3: #9373b0; */
+  --purple--light-1: #a185ba;
+  --purple--light-2: #9373b0;
+  --purple--light-3: #6c488c;
+  --purple--light-4: #54386d;
   --main-blue: #03a7d3;
   --secondary-blue: hsl(193, 97%, 42%, 54%);
   --step-number-colour: #fff;
