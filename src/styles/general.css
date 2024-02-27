@@ -604,6 +604,10 @@ form .cta-btn {
     gap: 2rem;
   }
 
+  .hero-section img {
+    margin-left: 20rem !important;
+  }
+
   .our-services-section {
     padding: 0 3rem;
   }
@@ -860,6 +864,12 @@ form .cta-btn {
 
 @media screen and (max-width: 36.5em) {
   /* 584 /16*/
+
+  .hero-section img {
+    margin-left: 16rem !important;
+    margin-top: 4rem;
+  }
+
   .step-detail p {
     padding: 0 0.7rem !important;
   }
@@ -961,6 +971,12 @@ form .cta-btn {
 
 @media screen and (max-width: 27.75em) {
   /* 444 / 16*/
+
+  
+  .hero-section img {
+    margin-left: 13rem !important;
+  }
+
   .sub-title {
     width: 50%;
   }
