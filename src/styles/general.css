@@ -1139,7 +1139,7 @@ form .cta-btn {
   }
 
   .steps-container, .seller-features {
-    grid-template-rows: repeat(8, 11vh) !important;
+    grid-template-rows: repeat(8, 11.5vh) !important;
   }
 
   .item-img:not(.special) {
