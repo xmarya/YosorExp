@@ -1,11 +1,13 @@
-.terms {
+.terms,
+.policies {
     grid-column: full-start / full-end;
     background-color: var(--section-bg);
     border-radius: 2rem;
     font-family: var(--font-paragraph);
 }
 
-.terms-container {
+.terms-container,
+.policies-container {
     padding: 5rem;
     display: grid;
     grid-template-columns: 1fr;
@@ -20,12 +22,13 @@ h3 {
 }
 
 h4 {
+    direction: rtl;
     font-size: 1.8rem;
     font-weight: 500;
     margin-bottom: 0.8rem;
 }
 
-p, ul:not(.nav-links) {
+p, ul:not(.nav-links):not(.footer-links) {
     direction: rtl;
     max-width: 75%;
     display: inline-block;
@@ -33,7 +36,19 @@ p, ul:not(.nav-links) {
     line-height: 1.8;
 }
 
-ul {
-    padding-right: 2rem;
+.policies-container p {
+    max-width: 90%;
+}
+
+.policies-container ul:not(.footer-links) {
+    list-style: decimal;
+}
+
+.policies-container ul:not(.footer-links) li {
+    margin-top: 1.6rem;
+}
+
+.sub-ul {
+    list-style:outside !important;
 }
 

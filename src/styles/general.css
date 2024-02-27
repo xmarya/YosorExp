@@ -293,9 +293,9 @@ form .cta-btn {
   grid-column: full-start / full-end;
   background-color: var(--main-purple);
   display: grid;
-  grid-template-columns: 40rem repeat(3, 1fr);
+  grid-template-columns: 48rem repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
-  gap: 4rem;
+  column-gap: 2rem;
   padding: 0 3.8rem;
 
   border-top-left-radius: 2rem;
@@ -308,9 +308,15 @@ form .cta-btn {
   font-size: 1.8rem;
 }
 
+.footer img {
+  width: 150%;
+  margin-top: 4rem;
+}
+
 .info,
 .footer-links,
 .contact {
+  text-align: center !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -342,6 +348,8 @@ form .cta-btn {
   font-family: var(--font-paragraph);
   color: #fff;
   text-align: center;
+  direction: rtl;
+
 
   display: flex;
   flex-direction: column;
@@ -395,10 +403,26 @@ form .cta-btn {
   }
 }
 
+@media screen and (max-width: 61.25em) {
+  /* 980 / 16*/
+
+  .footer {
+    grid-template-columns: 44rem repeat(3, 1fr);
+  }
+}
+
 @media screen and (max-width: 60.13em) {
   /* 962 /16 */
   .selling-features {
     padding: 0 1rem !important;
+  }
+}
+
+@media screen and (max-width: 58em) {
+  /* 928 / 16*/
+
+  .footer {
+    grid-template-columns: 40rem repeat(3, 1fr);
   }
 }
 
@@ -1106,8 +1130,12 @@ form .cta-btn {
 
 @media screen and (max-width: 24.5em) {
   /* 390 / 16 */
+
+  .stats-box {
+    width: 100%;
+  }
   .stats span {
-    font-size: 3.2rem !important;
+    font-size: 3.8rem !important;
   }
 
   .steps-container, .seller-features {
