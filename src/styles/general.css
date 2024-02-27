@@ -7,8 +7,8 @@
   --purple--light-3: #9373b0;
   --main-blue: #03a7d3;
   --secondary-blue: hsl(193, 97%, 42%, 54%);
-  --step-number-colour: #dee2e6;
-  --step-detail-colour: #f8f9fa;
+  --step-number-colour: #fff;
+  --step-detail-colour: #fff;
 
   --section-bg: #f2f2f2;
   --section-margin-top: 14rem;
